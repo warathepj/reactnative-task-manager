@@ -1,50 +1,118 @@
-# Welcome to your Expo app 👋
+# Task Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, cross-platform task management application built with React Native and Expo. Features a clean, intuitive interface with support for dark/light themes and persistent storage.
 
-## Get started
+## Features
 
-1. Install dependencies
+- ✅ Create and manage tasks
+- 🔄 Mark tasks as complete/incomplete
+- 🌓 Dark/Light theme support
+- 💾 Persistent storage
+- 📱 Cross-platform (iOS, Android, Web)
+- 🎨 Modern UI with smooth animations
 
+## Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- For iOS development: macOS with Xcode
+- For Android development: Android Studio with SDK
+
+## Installation
+
+1. Clone the repository:
+   TODO:
+
+   ```bash
+   git clone https://github.com/yourusername/my-task-manager.git
+   cd my-task-manager
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+## Running the App
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Start the development server:
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This will open the Expo Developer Tools in your browser. From there, you can:
 
-## Learn more
+- Press `a` to open on Android emulator
+- Press `i` to open on iOS simulator
+- Press `w` to open in web browser
+- Scan the QR code with Expo Go app on your mobile device
 
-To learn more about developing your project with Expo, look at the following resources:
+## Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+my-task-manager/
+├── app/                   # Main application code
+│   ├── (tabs)/           # Tab-based navigation
+│   │   ├── index.tsx     # Main tasks screen
+│   │   └── explore.tsx   # Explore screen
+│   └── _layout.tsx       # Root layout configuration
+├── components/           # Reusable components
+├── constants/           # App constants and theme
+├── database/           # Database configuration
+├── hooks/              # Custom React hooks
+└── assets/            # Images, fonts, and other static files
+```
 
-## Join the community
+## Technology Stack
 
-Join our community of developers creating universal apps.
+- [Expo](https://expo.dev/) - Development platform
+- [React Native](https://reactnative.dev/) - Core framework
+- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based routing
+- [SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/) - Local database
+- [React Navigation](https://reactnavigation.org/) - Navigation library
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Development
+
+### Custom Components
+
+The app uses several custom themed components:
+
+- `ThemedText` - Text component with theme support
+- `ThemedView` - View component with theme support
+- `ThemedButton` - Button component with theme support
+
+### Database Operations
+
+Task data is stored using SQLite (native) or WebStorage (web), providing:
+
+- Task creation
+- Task completion toggling
+- Persistent storage across app restarts
+
+### Styling
+
+The app uses a combination of:
+
+- StyleSheet for static styles
+- Dynamic theming for dark/light mode
+- Custom colors defined in `constants/Colors.ts`
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- Icons provided by [Expo Symbols](https://github.com/expo/expo/tree/main/packages/expo-symbols)
