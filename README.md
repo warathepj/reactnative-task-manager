@@ -4,7 +4,7 @@
 
 # Task Manager App
 
-A modern, cross-platform task management application built with React Native and Expo. Features a clean, intuitive interface with support for dark/light themes and persistent storage.
+A modern, cross-platform task management application built with React Native and Expo. Features a clean, intuitive interface and persistent storage.
 
 ## Features
 
