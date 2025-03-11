@@ -111,4 +111,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
 - Icons provided by [Expo Symbols](https://github.com/expo/expo/tree/main/packages/expo-symbols)
 
-TODO:
