@@ -1,3 +1,7 @@
+# เลี้ยงกาแฟผู้พัฒนา
+
+!["Alt text"](https://warathepj.github.io/js-ai-gallery/public/image/promptpay-20.png)
+
 # Task Manager App
 
 A modern, cross-platform task management application built with React Native and Expo. Features a clean, intuitive interface with support for dark/light themes and persistent storage.
@@ -6,7 +10,6 @@ A modern, cross-platform task management application built with React Native and
 
 - ✅ Create and manage tasks
 - 🔄 Mark tasks as complete/incomplete
-- 🌓 Dark/Light theme support
 - 💾 Persistent storage
 - 📱 Cross-platform (iOS, Android, Web)
 - 🎨 Modern UI with smooth animations
@@ -22,11 +25,10 @@ A modern, cross-platform task management application built with React Native and
 ## Installation
 
 1. Clone the repository:
-   TODO:
 
    ```bash
-   git clone https://github.com/yourusername/my-task-manager.git
-   cd my-task-manager
+   git clone https://github.com/warathepj/reactnative-task-manager.git
+   cd reactnative-task-manager
    ```
 
 2. Install dependencies:
@@ -99,14 +101,6 @@ The app uses a combination of:
 - Dynamic theming for dark/light mode
 - Custom colors defined in `constants/Colors.ts`
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -116,3 +110,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Expo Documentation](https://docs.expo.dev/)
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
 - Icons provided by [Expo Symbols](https://github.com/expo/expo/tree/main/packages/expo-symbols)
+
+TODO:

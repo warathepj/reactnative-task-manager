@@ -59,6 +59,17 @@ export default function App() {
     }
   };
 
+  const deleteTask = async (id: number) => {
+    try {
+      const updatedTasks = tasks.filter(task => task.id !== id);
+      setTasks(updatedTasks);
+      // Here you would also delete from the database
+      // await deleteTaskFromDb(id);
+    } catch (error) {
+      console.error('Error deleting task:', error);
+    }
+  };
+
   const renderTask = ({ item }: { item: Task }) => (
     <ThemedView style={styles.taskItem}>
       <TouchableOpacity 
@@ -84,6 +95,16 @@ export default function App() {
         ]}>
           {item.text}
         </ThemedText>
+        <TouchableOpacity 
+          onPress={() => deleteTask(item.id)}
+          style={styles.deleteButton}
+        >
+          <IconSymbol
+            name="trash.fill"
+            size={20}
+            color={Colors[colorScheme].icon}
+          />
+        </TouchableOpacity>
       </TouchableOpacity>
     </ThemedView>
   );
@@ -167,5 +188,9 @@ const styles = StyleSheet.create({
   taskTextCompleted: {
     textDecorationLine: 'line-through',
     opacity: 0.6,
+  },
+  deleteButton: {
+    padding: 8,
+    marginLeft: 8,
   },
 });
